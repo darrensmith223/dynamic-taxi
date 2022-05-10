@@ -1,12 +1,5 @@
-<?php
-header('Content-type: image/png');
-header('Cache-Control: no-cache, max-age=0');
-
-$png_image = imagecreate(350, 150);
-imagecolorallocate($png_image, 15, 142, 210);
-$black = imagecolorallocate($png_image, 0, 0, 0);
-$text = time();
-imagestring($png_image, 5, 0, 0, $text, $black);
-imagepng($png_image);
-imagedestroy($png_image);
-?>
+ <?php 
+ $image = "https://www.sparkpost.com/wp-content/uploads/2016/07/SparkPost_Logo_Gray-Orange-1.png";
+ $imageData = base64_encode(file_get_contents($image));
+ echo '<img src="data:image/png;base64,'.$imageData.'">';
+ ?>
