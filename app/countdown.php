@@ -15,7 +15,7 @@
 	$image_height = $_GET['ht'];
 	$image_width = (16 * $image_height / 3);
     $background_image = imagecreate($image_width, $image_height);
-	imagecolorallocate($background_image, 255, 255, 255);  // ---------- Not sure why this is needed
+	imagecolorallocate($background_image, 255, 255, 255); 
 
     // Build Text Animation
     $duration = 100;  // milliseconds
