@@ -22,7 +22,7 @@
     $font_size = (2 * $image_height / 3);
     $x_offset = 0.01 * $image_width;
     $y_offset = 0.83 * $image_height;
-    $font_path = __DIR__ . DIRECTORY_SEPARATOR . 'Futura.ttc';
+    $font_path = __DIR__ . DIRECTORY_SEPARATOR . 'fonts' . DIRECTORY_SEPARATOR . 'Futura.ttc';
     $font_color_r = 0;
     $font_color_g = 0;
     $font_color_b = 0;
