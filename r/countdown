@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let redirectPage = () => {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const endTime = urlParams.get('time')
+            const ht = urlParams.get('ht')
+            const url = `http://52.41.190.194/dynamic-taxi/app/countdown.php?time=${endTime}&ht=${ht}`;
+            window.location.replace(url);
+            }
+        </script>
+    </head>
+    <body onload="redirectPage()">
+    </body>
+</html>
