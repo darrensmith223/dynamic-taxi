@@ -1,0 +1,22 @@
+{
+  "campaign_id": "php-img-test",
+  "recipients": [
+    {
+      "address": {
+        "email": "john.doe@example.com",
+        "name": "John"
+      },
+      "substitution_data": {
+          "finish_time": "2022-09-03"
+      }
+    }
+    ],
+  "content": {
+    "from": {
+      "email": "hello@example.net",
+      "name": "John"
+    },
+    "subject": "Testing php",
+    "html": "<html><body><p><img src=\"http://52.41.190.194/dynamic-taxi/app/countdown.php?time={{finish_time}}&ht=150\"></p></body></html>"
+  }
+}
